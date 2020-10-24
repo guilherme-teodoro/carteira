@@ -1,0 +1,27 @@
+{
+  "name": "carteira",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "workspaces": [
+    "server",
+    "shared",
+    "client"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "yarn workspace server",
+    "client": "yarn workspace client",
+    "shared": "yarn workspace shared"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "currency.js": "^2.0.3",
+    "decimal.js": "^10.2.1",
+    "fp-ts": "^2.8.4",
+    "io-ts": "^2.2.11"
+  }
+}
